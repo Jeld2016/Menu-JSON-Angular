@@ -1,0 +1,15 @@
+<mat-drawer-container class="Main-container" autosize>
+  <mat-drawer #drawer class="sidenav-menu" mode="side">
+    <app-menu></app-menu>
+  </mat-drawer>
+
+  <div class="sidenav-content">  
+    <mat-toolbar class="toolbar">
+      <button class="Button-menu" mat-flat-button color="primary" aria-label="menu"(click)="drawer.toggle()">
+        menu
+      </button>
+    </mat-toolbar>
+    
+  </div>
+
+</mat-drawer-container>

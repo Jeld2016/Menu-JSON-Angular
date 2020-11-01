@@ -1,0 +1,26 @@
+ <mat-list *ngFor="let menus of items" flex>
+    <ng-container >
+      <mat-expansion-panel hideToggle *ngFor="let item of menus">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <a href="#"><img class="Ico-Menu" src="{{item.image}}"/><span matBadge="{{item.badge}}" matBadgeColor="warn" matBadgeOverlap="false" matBadgeSize="small" class="Primarymenu">{{ item.name }}</span></a>
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <div *ngIf="item.menu && item.menu.length > 0">
+        <mat-expansion-panel hideToggle *ngFor="let subItem of item.menu">
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                <a href="#" ><span matBadge="{{ subItem.badge }}" matBadgeOverlap="false" matBadgeColor="warn" matBadgeSize="small">{{ subItem.name }}</span></a>
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <div *ngFor="let thirdItem of subItem.menu">
+                <mat-list-item>
+                  <a href="#"><span matBadge="{{thirdItem.badge}}" matBadgeOverlap="false" matBadgeColor="warn" matBadgeSize="small">{{ thirdItem.name }}</span></a>
+                </mat-list-item>
+            </div>
+          </mat-expansion-panel>
+        </div>
+      </mat-expansion-panel>
+  </ng-container>
+ 
+  </mat-list>

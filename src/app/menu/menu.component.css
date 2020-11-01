@@ -1,0 +1,50 @@
+    .toolbar{
+      background-color: #27a3c9;
+      color: white;
+      display: flex;
+      justify-content: center;
+    }
+
+    /*
+    * Navigation
+    */
+    .mat-list-item a{
+      color: black;
+      text-decoration: none;
+      font-size: .6rem;
+    }
+
+    .mat-list-item{
+      height: 1rem !important;
+    }
+  
+
+  .Title{
+    margin-left: 30%;
+  }
+
+  .Ico-Menu{
+    width: 15px;
+    margin-left: 5px;
+  }
+
+  .mat-badge-content{
+    border-radius: 10%!important;
+    float: rigth;
+  }
+
+  .PrimaryMenu{
+    font-weight: 600;
+  }
+
+  .mat-expansion-panel-header-title, .mat-expansion-panel-header-description {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .mat-expansion-panel:not([class*=mat-elevation-z]) {
+    box-shadow: none;
+}
+.mat-expansion-panel:not([class*=mat-elevation-z]) {
+    box-shadow: none;
+}

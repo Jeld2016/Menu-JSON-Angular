@@ -1,0 +1,21 @@
+.Main-container {
+    width: 100vw;
+    height: 100vh;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+  }
+  
+  .sidenav-content .mat-toolbar{
+      background-color: #329be0;
+  }
+  
+  .sidenav-menu {
+    padding: 20px;
+  }
+
+  .Button-menu{
+    color: white;
+    font-weight: 600;
+    background-color: #329be0;
+    border: 0;
+  }
+  
